@@ -1,0 +1,5 @@
+.PHONY: all
+
+all:
+	@echo "HemaScale: static site — public/ is pre-built, nothing to compile."
+	@test -f public/index.html || (echo "public/index.html missing" && exit 1)
